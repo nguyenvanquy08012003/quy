@@ -1,0 +1,1574 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Văn Phòng Phẩm  </title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    img{
+        width:80%
+    }
+    .row{
+        width:100%;
+        height:300px;
+    }
+    * {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #ffc602;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+nav {
+    background-color: #ffd400;
+    padding: 10px;
+    
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-fix {
+    padding-right: 15px;
+}
+
+nav ul li, a {
+    color: black;
+}
+nav ul li:nth-child(3) {
+    position: relative;
+}
+
+nav ul li:nth-child(5) i {
+    font-size: 25px;
+}
+
+nav ul li:nth-child(5) {
+    text-align: center;
+}
+
+nav ul li:nth-child(6) a {
+    padding: 0 12px;
+    text-align: center;
+    line-height: 16px;
+}
+
+nav ul li:nth-child(3) i {
+    position: absolute;
+    font-size: 15px;
+    right: 14px;
+    top: 11px;
+
+}
+nav ul li:nth-child(3) input {
+    height: 38px;
+    background-color: #fff;
+    border: none;
+    width: 300px;
+    padding-left: 10px;
+    border-radius: 4px;
+    outline: none;
+
+
+}
+.header-cart {
+    border-radius: 4px;
+    color: #333;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px 10px;
+    width: 10%;
+    background: rgba(255,172,10,.6);
+}
+
+.header__address {
+    color: #333;
+    font-size: 11px;
+    line-height: 15px;
+    margin-right: 21px;
+    width: 11%;
+    padding-left: 15px;
+    background: rgba(255,172,10,.6);
+    padding: 4px 6px 4px 10px;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+    
+}
+.header-box {
+    color: #333;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 6px 14px;
+    width: 9%;
+    border-radius: 4px;
+    text-align: center;
+    float: left;
+    margin: 0 21px;
+    background: rgba(255,172,10,.6);
+}
+
+.menu-bar {
+    background-color: #ffd400;
+    padding: 12px 0;
+}
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu-bar ul li a {
+    font-size: 14px;
+    padding: -2px;
+    
+}
+
+.menu-bar ul li a i {
+    margin-right: 8px;
+    font-size: 15px;
+
+}
+
+body {
+    background: #f3f3f3;
+}
+.content {
+    width: 1200px;
+    height: 200px;
+    background: #fff;
+    display: block;
+    margin-left: 73px;
+    margin-top: 25px;
+    border-radius: 11px;
+}
+.name-box {
+    padding-left: 20px;
+    padding-top: 20px;
+} 
+
+.img-list {
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.col-sm-3 ul li {
+    list-style: circle;
+    color: #333;
+    font-size: 12px;
+    line-height: 19px;
+    
+
+}
+.gia {
+    color: #222;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+.col-wrap {
+    display: table;
+    width: 100%;
+  }
+  
+  .col {
+    display: table-cell;
+    padding: 1rem
+  }
+  
+  .col:nth-child(even) {
+    background-color: orange;
+  }
+  
+  .col:nth-child(odd) {
+    background-color: yellow;
+  }
+  
+  .product-content {
+    background-color: #FED100;
+    padding: 12px;
+  }
+
+  .product-content-items {
+    display: flex;
+    justify-content: space-evenly ;
+  }
+
+  .product-content-item {
+    width: 19%;
+    background:#fff;
+    padding:50px 12px 12px;
+    border-radius: 5px;
+  } 
+
+  .product-content-item >img {
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .product-content-item img:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+  }
+
+  .product-content-item-text {
+    padding-top: 20px;
+  }
+
+  .product-content-item-text li {
+    margin-bottom: 6px;
+  }
+
+  .product-content-item-text li:first-child {
+    height: 30px;
+    width: 76%;
+    background: #288ad6;
+    display: inline-block;
+    margin-bottom: 20px;
+    align-items: center;
+    line-height: 30px;
+    border-radius: 40px;
+  }
+
+  .product-content-item-text li:first-child p {
+    color: #fff;
+    font-size: 11px;
+
+  }
+
+  .product-content-item-text li:first-child img {
+    width: 30px;
+    float: left;
+    margin-right: 6px;
+  }
+  
+  .product-content-item-text li:nth-child(3) {
+    font-weight: bold;
+  }
+
+  .product-content-item {
+    display: block;
+  }
+
+ 
+
+
+.product-galery-one-content-product-item {
+  width: 20%;
+  padding: 30px 12px 12px;
+  border: 4px solid #ddd;
+  cursor: pointer;
+}
+
+.product-galery-one-content-product-item img:hover {
+  transform: translateY(-20px);
+}
+
+.product-galery-one-content-product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-galery-one-content-product-item > img {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+body {
+  background-color: #fff;
+  
+}
+
+.col-sm-3 a {
+  color: #2f80ed;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.col-sm-3 p:hover {
+  color:#288ad6;
+  cursor: pointer;
+  
+}
+
+.theEnd a {
+  color:#288ad6;
+  text-decoration: none;
+}
+
+.slider-product-one-content-item-text li:last-child {
+  color:#fb6e2e;
+  list-style: none;
+}
+ 
+.slider-product-one-content-item-text li:nth-child(2) {
+  list-style: none;
+  
+}
+.slider-product-one-content-item-text li:first-child {
+  list-style: none;
+}
+
+.slider-product-one-content-item-text li {
+  list-style: disc;
+  font-size: 13px;
+}
+  
+.slider-product-one-content-item-text li strong {
+  color: #d0021c;
+  list-style: none;
+  
+    font-size: 18px;
+    margin-bottom: 8px
+}
+
+.slider-product-one-content-item-text li:nth-child(3) {
+  list-style: none;
+}     
+  .nen{background: rgb(26, 148, 255);} 
+  .xam{
+      background-color:#DCDCDC	;
+  }
+    </style>
+</head>
+<body>
+     <div class="vungTren">
+        
+          <nav class="navbar navbar-inverse nen ">
+          <div class="container-fluid"style="color:red">
+            <div class="navbar-header nen">
+              <a class="navbar-brand" href="#">VĂN PHÒNG PHẨM </a>
+            </div>
+            <ul class="nav navbar-nav nen">
+              <li class=" nen "><a href="Trangchu.html">Trang chủ</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Danh mục
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Dụng cụ mỹ thuật</a></li>
+                  
+                
+                  <li><a href="#">Bút</a></li>
+                  
+                  <li><a href="#">Balo</a></li>
+                 
+                  <li><a href="#">Sách </a></li>
+                </ul>
+              </li>
+             
+              <form class="navbar-form navbar-left" action="/action_page.php">
+              <div class="input-group">
+                <input style="width:400px;"type="text" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>  
+              <ul class="nav navbar-nav navbar-right">
+                 <li><a href="#"><span class="call-outline phai"></span> Hỗ trợ khách hàng:1900 866 819</a></li>
+                <li><button style="height:50px;width:100px;background-color:red"type="button" >Giỏ hàng</button></li>
+              <li><a href="Dangki.html"><span class="glyphicon glyphicon-user phai"></span> Sign Up</a></li>
+              
+            </ul>
+            </ul>
+          </div>
+        </nav>
+     </div>
+     
+              <div class="row">
+    <div class="col-sm-5"style="position: relative;
+    min-height: 1px;
+    padding-right: 2px;
+    padding-left: 30px;">
+       <img style="width:100%;height:300px "src="image/logo7.webp" alt="Los Angeles">
+    </div>
+    <div class="col-sm-7"style="position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 3px;">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol>  
+              <div class="carousel-inner">
+                <div  class="item active">
+                  <img style="width:100%;height:300px "src="image/da.quy.webp" alt="Los Angeles">
+                </div>
+                 <div class="item">
+                  <img style="width:100%;height:300px;"src="image/da111.jpg" alt="Chicago">
+                </div>  
+                <div  class="item ">
+                <img style="width:100%;height:300px;"src="image/da10.jpg"alt=""/>
+                </div> 
+                 <div class="item ">
+                <img style="width:100%;height:300px;"src="image/logo6.webp"alt=""/>
+                </div> 
+                <div class="item ">
+                <img style="width:100%;height:300px;"src="image/logo5.webp"alt=""/>
+                </div> 
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>          
+            </div>
+            </div>  
+            
+    </div>  
+   
+  <div>
+    <img style="width:100%;height:300px;padding-left:30px;padding-right:10px"src="image/daa.jpg"alt=""/>
+  </div>
+
+    <selection class="product-galery-one">
+    <div class="container">
+        <div class="product-galery-one-content">
+            <div class="product-galery-one-content-title">
+                <br/>  <br/>
+                <h2> SÁCH NỔI BẬT</h2>
+                <br/>  <br/>
+            </div>
+            <div class="product-galery-one-content-product">
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m1.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da6.webp" alt=""></li>
+                        <a href="https://tka.tiki.vn/pixel/pixel?data=djAwMRr1j4iKWhXwpk4dldNBnSczvz-6ulb4SzlyHVH5G1yjJlvCGRCe2MTNe9gTp4DWVLtQhtIYrdXi0yb0lWJ3ls2aZj3hqwF3Fym_kBYRn8Kt99PT1_EQteLeIrucgkI8EJok72dv14hwJg2hRRUPenJiFUHx2C90eA4Zs1rlR67DqNhe5uLwoQgtpJ7qHIiq9YkEcj2n1bFUbKgZUK7x3duUW6yIn9bc2yzYZlRrl2aUmaJUY2zDzIgt3hmEZA2lfgyJyC6nOf6KrNW_V9WYUIloxvFgCQR8zDs1i_fcu2lLe0-YXf8gMSzVgW8gVmplLX0FHnTqc8lltKXFRlUvD5yaRC9AQ5t8gD7OG6lY3nAbGrTFPinRR4PxPhkX_SGxopm9CcC87G4Lx3N5JoEoeTHqWMVpAG1kbh6UZ4ziX8NOiEhRRy-f47M2vnWbb7aF2mw0nR6etgpRg6cegpS9NKcXI5tzLQSAXz12IOUIvEiPVX8w6DJJwFwyBQnxdytM8PAoc6AT5U4X6VqU_0ZR2tRxzBGtbX-ePmLgxQTi_w-iNj6QEIe2Ya7__J21f2OqzMVWo65iZVql999_QJ8xztkC9mKGYmRYYnQ31QbqN5OAhbSAFdTMJfdU8-pRt-ubGg7SdQqJ6z5rGza5v1yPBg_pf9vq7KVWIIlPGszgShrzBpa3F7vrpnqFZOlZusnRwyH2v4OS24LASU2mifuu8TydEGVuYxVH7oOccuYcHtup61I2Z19oCTjf-5yym8F3NxTNu-2VnX7ZW3IW4ewYdq6lRPLT3DXtEWEIQh8wezpS79bS0kd5gYhCbcQTYSjfXU4xobSsmQ1KK7dyLt01zAwE_Jy6KHmVtT_i6ZLD6ykZz_QOiIDycRa6f3Ae4yYVcG_9WpykmO7-j5y3qoOsheMwAr_h5fakB3ZZZSCR2FEYZXKs8JmPcbD0hSbRAyqBmotEb1YrMQllvFODZA390pcAdq1PuS5R9GQYjcdiCgZCB43Kt5c6swjG9F4T9RwSdVZmjdwXwBiWtjx6HQ3x3k2ogvKp7_e5nmZpcrFYYG537UOJBtBBTKCQBbavu9-A0dA-veBZFlWpFMDsTxPA1SLR3UNSD--9IdY_K-RlNRYlyMpBhaXBGuqxld6cE_VX4NgmNMUeaU8oEEJai-5Tc_KWhZ1yzLoivWJ99JxM5_l6fEG2H1iy7X3t7BfIT0ydzvBgTcCCHJzwzOqq4fupdVMLyuBNh2M0ZmBjZuFO5wobs40FXLVTZFPda6PEyth2ictSBfuRbVRSHAuMhc08LKcUCISqDa03F87mJiI_H3cCzxn3AaByPzWK20wLpfqtBRjAdBf8GSkZ9GC5YVuKoven0q445xJ3WoxcQEPGVcJ3DFzZx99L8jVZT1t8WwCM5Zy3PSNI1JGHslPy76fkoSA1PQ&CLICK&reqid=06VyizBlDn&pos=1&redirect=https%3A%2F%2Ftiki.vn%2Ftuoi-tre-dang-gia-bao-nhieu-tai-ban-p113530805.html%3Fspid%3D113530807"><li>Tuổi trẻ đáng giá bao nhiêu</li></a>
+                        <li><strong>75.300</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m2.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <img src="image/da7.webp" alt="">
+                        <a href="https://tiki.vn/dung-lua-chon-an-nhan-khi-con-tre-tai-ban-p103640412.html?spid=103640414"><li>Đừng lựa chọn an nhàn khi bạn còn trẻ</li></a>
+                        
+                        <li><strong>69.300</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m3.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da8.webp" alt=""></li>
+                        <a href="https://tiki.vn/sach-nguoi-trong-muon-nghe-nganh-kinh-te-co-gi-p83432000.html?spid=83432001"><li>Ngành kinh tế có gì</li></a>
+                       
+                        <li><strong>131.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m4.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da9.webp" alt=""></li>
+                        <a href="https://tiki.vn/sach-gian-tai-ban-2021-cuon-sach-hay-cua-thien-su-thich-nhat-hanh-tang-kem-bookmark-p145287904.html?spid=145287905"<li>Giận</li></a>
+                        
+                        <li><strong>130.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m5.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da10.webp" alt=""></li>
+                        <a href="https://tiki.vn/gieo-trong-hanh-phuc-tai-ban-p100958457.html?spid=108130812"<li>Gieo trồng hạnh phúc</li></a>
+                        
+                        <li><strong>57.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m6.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da11.webp" alt=""></li>
+                        <a href="https://tiki.vn/ai-se-khoc-khi-ban-lia-xa-p1464015.html?spid=1464113"><li>Ai sẽ khóc khi bạn lìa xa/<li></a>                 
+                        <li><strong>80.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m7.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da12.webp" alt=""></li>
+                        <a href="https://tiki.vn/tam-cua-ta-o-dau-hanh-phuc-cua-ta-o-do-p66923673.html?spid=66923674"><li>Tâm của ta ở đâu hạnh phúc của ta ở đó</li> </a>   
+                        
+                        <li><strong>69.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m8.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da13.webp" alt=""></li>
+                        <a href="https://tiki.vn/thuc-tinh-muc-dich-song-tai-ban-p139567621.html?spid=139567623"><li>Thứ tỉnh mục đích sống</li> </a>                     
+                        <li><strong>108.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m9.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da14.webp" alt=""></li>
+                        <a href="https://tiki.vn/hanh-phuc-dich-thuc-tai-ban-p10366395.html?spid=10366396"><li>Hạnh phúc đích thực</li></a>
+                        
+                        <li><strong>59.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da15.webp" alt=""></li>
+                        <a href="https://tka.tiki.vn/pixel/pixel?data=djAwMY58ChKQidglRxdYUX0VJYfjbA5VeC39ZaztFXlaUax4f-NKVlM5ELTFfmyzKpjKItlxpthe78SJ1-Jn50cHGFuhwQ3w4mIfjFU8LsNfikK9GyRp7hsq59s3sNKmI4xO0T8D58SI-4pKyMBfR0I_ki426UpNbH_9b2ZhtHKj071We53w3J9RMU4Av5QSOdYseZr5iD91o6dc4OoXGh_kxdlVYgIlHBxADqGQZrDgCKhKKr2Y204CzwpjB7KEA9zMDJ-6Zysw5IHwic4aIuCadB2x_21j2o6cdA3odlAmaLF3X_onXISWW5zPBIGc7JCV6m4l7SchrjVIW3RD1YrWBzBAac9SSskJHwQNE7oFeAhQGQmQX-YHmuBtQwmcapnk0tMNm0rOJ6hvW_jxgR-wg5UHX327ip40J1uFZ_8ebIWFAMsU9VwSea2tV23Q6L037MwYY0g76A6KNCGHGAW6MTXIBOfMsF1OXqCX5XaoDgU906rEkmKCgsH4w5qg0NtxJHg-krNcHhwY-Z8UYvM6aB1_-ZjC8Vqlzb4DKfCCmFZDrXTzpeMJJLBur81fNMa5PRzvrNRPhH7Yc1sqx7DZFCwrJ_ntGOQjRQ4W5qA6tH8tVcryFEo1O0bMp-HcDDce7bCGDmcTLp13KLE3ZwWOUzPLQZ2P_pOX_wPwAQku04Q2-soWlwodl8asgLFwvV8fWDs65Y6xlnnXR28ArMnKlN8u_6NTUGq5WCqxlS3WcS7v7Jzda5UNsJAibgRMjxXewcdTV6YFKXgCHxLjT4bd1bQ799QedWI_mSVMJhYO0J-joD0uIHltmJMhtdiy7i7nKWvNTHazcKPKxjKeF8uWVoMxvou3gnx9T0Kz2aehfyUsD3J-Z8bfabTK5VAR-mLvsXD0o_-DYFsQwzz1xSUgJbwW-nq1TT97xoGuujdj_yFCx29iRiYp9eE3aT8o5QySeGJT9L-lyDrLX4cklkLalRrQTwbUxg_iD1YmvTZtHE5iTc4WavORQrD02sHYz883Tk56JjcberRzrp66woTSrJEDIUgKSYBLXVMceuJUkoBlYVBmuXebOa7MWJkbC2Fuqb9gsAxyf4ksVgDofqfNbcE-1-MSNQtaKLcNdTsB8chqRp73qCYySR--yJz9IWFz45JzsSM6BivrGVlnuF8XGlsKGZIEFwxVfTk3WdSs0f2RfONsK7sXVaOuzZGS6QMhAQk2gSvnXxGhRH5hDPd5vWUmPLwXzHlQlWDe0qIoza-HA1mWu5GD5o2kpjw-CYhdsyNSZzgyW4KVrhNFOs8RdA8dFoS7yArCzE--noYPKIUwa4WLXKg-1EzNMthSQAHAikN-fJs51BNC2GNxt47XEZfaw4L9CByzcU7n2o2pUPYO49DwX3ak8WBrxLQHSD1kdTnoLgh2RkC6gR78Yi0m46XcvfIsPA&CLICK&reqid=UIg6zZE5Ea&pos=25&redirect=https%3A%2F%2Ftiki.vn%2F90-ngay-thuc-hanh-biet-on-chinh-phuc-hanh-phuc-tap-1-tai-ban-2021-p147999809.html%3Fspid%3D147999810"><li>90 ngày thực hành biết ơn</li></a>
+                       
+                        <li><strong>225.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da16.webp" alt=""></li>
+                        <a href="https://tka.tiki.vn/pixel/pixel?data=djAwMS1gNQCKh_jx1J12MVq_znvL2rHSH6k5I_Oya3PvmmZjq3mU2TXSCIOoet4G_vRgBe7HoVtfPO9K2F3BEsXA1-va_nUwAJwelSg6r3yr-DlBIDhj1G3C_XZdEP1xK5YGLm9_zZUCB5xDwaakBRYJGa_Dt5J-BqMV9NeUSxIh2Yf2foLBWrmnprWJeV6d9rE-e90wGI4ADC6TaWRoW3eNdDWLCeaD84-HxTyAd9Xyk_PO2bHwKM66K_jjd_rDyyQ4V-oB_9EQI5DeCG6u9c2VVHfS2MFxasAAf6GPtO4epFRw8COV1UXOYBoJgTasXq_TUKejUEmO1ck-7mjXeNeYD9VOr8-UWxT3fsyx9Wgy0qndkfQyPn4JYYjRzJGyZfAxU2HlJUjXlbkmkrvVZAv2ZOVjj3SWqOCM6RLrlIDZZB8t8hxomCv8pmh66NFG_YZ-nFF6HpfEKKmY8fGOEcT4YA0noY580Mgr5xcOAfM-pYqm5D1Ora1Y3kFjmoNBlo7eeCTHlfUw2EaVAM-ZNeaXSpRmvbZYKGU0-UIsAOYMnvN1i1PpQ_6IB0NktbtEDyb_BEZdM3b8Zujv6eioz_KNX8cSyhBemYm3wFph2ucmYMun_p9qQ6iDyE6xZq37es9OKtzxdMSevBR5lgDqgFHJ7q021tHac_MBQ8M1b2_QC_dmOpL-bPPgPkGYmcsbzMSF0ECjLkZcxUjOsw5jY8bm8L8AjTXRkpPCpjrHfses9BEwD_7-Wv02skvMRGIb14yeB0hTFnmvuS36DwhCQcbkkniRntC_AtIlj3WccIEdhdE3k5-4Hgs3UngRahX1HSzLXWEtrcuoxzlw6esSqVcKcCvm_CwOulgO6HqGclqZFTfBmW476mt4WzNMNe6vRzsWdnYZAhns34iu2AFaNy9iaBqI8vsRliJRnW_tI0MCIkmwYeyT-_yKKQl7TEXAu0rF8-JJ7ZAnjPEFJm6l0ZeDKzKAjMIO8re_AmDdbBAP2cer3olQ0Xz1IAEiMPQs0lgpuhG8yQVL_hUT_j4y-h7XFFnrQGxWX9BJT7b3tYEhk30nQ1TNDNGJXw76n_4clfURRUrmMxWj9z12XU_B4ztI7mzT39YifQecVMCTz6s7CK7kBKtCEn2rhgHKHZkNhixMv39_7ajNUwEKvyODw_WX1zUpyNXbeo3tEqDFNLaDVzXfRbsIrN-LYA1czdJBAG3_Hk7dSBFhj0uphPE8V-q6ys1ts5BnIpf_Fh98u7PDR-wyf8Uwkiu4fN6E3QWpigvTVypPqFQsn2_EAOP61sC-9lNWCBEvbcas_h2ixNnz9Rr2oLsqWtSmyiusjk0VgQl2B4CreCdKUKtbtGSRbXZEWwJuEdgaT4qiC5qifvrjQPFvrfy85VlayfEWdw&CLICK&reqid=UIg6zZE5Ea&pos=33&redirect=https%3A%2F%2Ftiki.vn%2Flong-tot-cua-ban-can-them-doi-phan-sac-sao-tap-2-p68832570.html%3Fspid%3D68832571"><li>Lòng tốt của bạn cần thêm đôi phần sắc sảo Tập 2</li></a>
+                        
+                        <li><strong>75.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da17.webp" alt=""></li>
+                        <a href="https://tiki.vn/hanh-phuc-dich-thuc-tai-ban-p568131.html?spid=173633765"><li>Hạnh phúc đích thức tái bản</li></a>
+                        
+                        <li><strong>75.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da18.webp" alt=""></li>
+                        <a href="https://tiki.vn/cuoc-song-dech-giong-cuoc-doi-p48659055.html?spid=48659056"<li>Cuộc sống giống cuộc đời</li></a>
+                       
+                        <li><strong>64.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da19.webp" alt=""></li>
+                        <a href="https://tiki.vn/loi-song-toi-gian-cua-nguoi-nhat-tai-ban-p2619491.html?spid=20425833"><li>Lối sống tối giản của người Nhật</li></a>
+                       
+                        <li><strong>90.250</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da20.webp" alt=""></li>
+                        <a href="https://tiki.vn/tam-thuc-p77230661.html?spid=83801491"><li>Tâm thức</li></a>
+                       
+                        <li><strong>95.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+        </div>
+    </div>
+</selection>
+          <img style="width:100%"src="image/logo4.webp"alt=""/>
+           
+             <selection class="product-galery-one">
+    <div class="container">
+        <div class="product-galery-one-content">
+            <div class="product-galery-one-content-title">
+                <br/>  <br/>
+                <h2> BÚT BI NỔI BẬT</h2>
+                <br/>  <br/>
+            </div>
+            <div class="product-galery-one-content-product">
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m1.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da38.webp" alt=""></li>
+                        <a href="https://product.hstatic.net/1000230347/product/60002173_5242901168a84ae8ad5687cbc6fd8764.jpg"><li>Bút bi cao cấp Parker Urban Twist URB X-VIBR Magenta CT TB-2143449 - Thép không gỉ</li></a>
+                        <li> Trình trạng: còn hàng</li>
+                        <li><strong>681.800</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m2.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <img src="image/da39.webp" alt="">
+                        <a href="https://product.hstatic.net/1000230347/product/60002172_8443ac796d2d440492f25d516cec8261.jpg"><li>Bút bi cao cấp Parker Urban Twist URB X-Metallic CT TB-S0736040 - Thép không gỉ</li>,</a>
+                         <li> Trình trạng: còn hàng</li>
+                        
+                        <li><strong>681.800</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m3.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da46.webp" alt=""></li>
+                        <a href="https://product.hstatic.net/1000230347/product/60002170_cf05740df4cb45aea69e6e2b76d69791.jpg"<li>Bút bi cao cấp Parker Urban Twist URB X-Muted Black CT TB-S0735950 - Thép không gỉ</li></a>
+                         <li> Trình trạng: còn hàng</li>
+                        <li><strong>681.800</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m4.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da47.webp" alt=""></li>
+                        <a href="https://product.hstatic.net/1000230347/product/60002148_2_135f29a1156548d09592ee8939a75133.jpg"><li>Bút bi cao cấp Parker SON X-Metal Black GT GB-2119787 - Thép không gỉ Mạ vàng 18k</li></a>
+                         <li> Trình trạng: còn hàng</li>
+                        <li><strong>4,356,000₫</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m5.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da48.webp" alt=""></li>
+                        <a href="https://product.hstatic.net/1000230347/product/60002153_12da39f1a9084e81a8c5e6aa7e5e9911.jpg"><li>Bút bi cao cấp Parker SON X-M Grey PGT GB-2119790 - Thép không gỉ</li></a>
+                         <li> Trình trạng: còn hàng</li>
+                        <li><strong>5,346,400</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m6.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da49.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/but-may-cao-cap-parker-son-metal-red-ct-18k-gb-2119650-thep-khong-gi"><li>Bút máy cao cấp Parker SON Metal Red CT 18k GB-2119650 - Mạ vàng 18K</li></a>
+                       
+                        <li> Trình trạng: còn hàng</li>
+                        <li><strong>6,864,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m7.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da50.webp" alt=""></li>
+                       <a href="https://flexoffice.com/products/but-bi-cao-cap-parker-son-x-metal-black-gt-gb-2119787-thep-khong-gi-ma-vang-18k"><li>Bút bi cao cấp Parker SON X-Metal Black GT GB-2119787 - Thép không gỉ Mạ vàng 18k</li></a>
+                         <li> Trình trạng: còn hàng</li>
+                        <li><strong>4,356,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m8.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da51.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/but-bi-cao-cap-parker-son-x-m-blue-ct-gb-2119745-thep-khong-gi"<li>Bút bi cao cấp Parker SON X-M Blue CT GB-2119745 - Thép không gỉ</li></a>
+                        <li> Trình trạng: còn hàng</li>
+                        
+                        <li><strong>5,346,4000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m9.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da53.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/but-bi-cao-cap-parker-jotter-xl-x-mn-black-bt-tb6-2122657"><li>Bút bi cao cấp Parker Jotter XL X-MN Black BT TB6-2122657</li></a>
+                        <li> Trình trạng: còn hàng</li>                      
+                        <li><strong>684,600</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da54.webp" alt=""></li>
+                      <a href="https://flexoffice.com/products/but-bi-cao-cap-parker-jotter-orig-x-pstl-yel-f-tb6-2118137"> <li>Bút bi cao cấp Parker Jotter ORIG X-PSTL YEL F TB6-2118137</li></a>
+                        <li> Trình trạng: còn hàng</li>
+                        <li><strong>101,500</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da55.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/combo-5-but-bi-bizner-biz-09?variant=1084335179"><li>Combo 5 Bút bi Bizner BIZ-09</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>202,725</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da56.webp" alt=""></li>
+                       <a href="https://flexoffice.com/products/but-bi-cao-cap-thien-long-bizner-biz-04?variant=1024635962"> <li>Bút bi cao cấp Bizner BIZ-04</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>980,100</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da57.webp" alt=""></li>
+                        <a href="https://product.hstatic.net/1000230347/product/60002180_2_b9d0ba1c7da34a8d8d5540d8fcd1eca4.jpg"><li>Bút bi cao cấp Parker IM PRM X-Blue Grey CT GB-2143645 - Thép không gỉ</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>1,270,500</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da59.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/but-bi-cao-cap-thien-long-bizner-biz-16-40years-ma-vang-22k"><li>Bút bi cao cấp Thiên Long Bizner BIZ-16/40YEARS - Mạ vàng 22K (Tặng kèm 02 ruột mạ vàng)</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>4,400,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da50.webp" alt=""></li>
+                        <a href="https://product.hstatic.net/1000230347/product/newellrubbermaid_1931675_m_imgps_20_3da8fd01bc0845dd96959974b19d2d11_2b3da753cc104de6ab170ed273d3b896.jpg"><li>Bút bi cao cấp Parker IM Đ-White Lacquer CT TB4-1975650</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>595,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+        </div>
+    </div>
+</selection>
+
+<img style="width:100%;height:250px"src="image/da112.webp"alt=""/>
+                      
+<selection class="product-galery-one">
+    <div class="container">
+        <div class="product-galery-one-content">
+            <div class="product-galery-one-content-title">
+                <br/>  <br/>
+                <h2> MỸ THUẬT SÁNG TẠO THỎA SỨC KHÁM PHÁ</h2>
+                <br/>  <br/>
+            </div>
+            <div class="product-galery-one-content-product">
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m1.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da60.webp" alt=""></li>
+                       <a href="https://flexoffice.com/products/sap-mau-thien-long-colokit-cr-c015"> <li>Sáp màu Colokit CR-C015</li></a>
+                       <li>Trình trạng: còn hàng</li>
+                        <li><strong>7.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m2.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <img src="image/da61.jpg" alt="">
+                        <a href="https://product.hstatic.net/1000230347/product/bo_vali_nghe_thuat_chu_cho_cuu_ho_128_mon_cho_be2_ec04d90c4f0743e59a4dca1763a5401b.jpg"><li>SBộ màu nghệ thuật Crayola Paw Patrol Inspiration Art Case 128 món cho bé</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>840,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m3.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da62.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/but-chi-mau-thien-long-colokit-cp-c08"><li>Bút chì 16 màu Colokit CPC-C08</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>54,400</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m4.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da63.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/sap-mau-thien-long-colokit-cr-c06-do"><li>Sáp màu Colokit Doraemon CR-C06/DO</li></a>
+                       <li>Trình trạng: còn hàng</li>
+                        <li><strong>33,600</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m5.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da64.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/mau-nuoc-thien-long-colokit-waco-c06"><li>Màu nước Colokit WACO-C06</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>27,900</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m6.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da65.webp" alt=""></li>
+                        <a  href="https://flexoffice.com/products/tap-to-mau-thien-long-colokit-cb-09"><li>Tập tô màu Colokit CB-09</li></a>
+                       <li>Trình trạng: còn hàng</li>
+                        
+                        <li><strong>8,0000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m7.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da67.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/sap-nan-thien-long-colokit-mc-03"><li>Sáp nặn Colokit MC-03</li></a>
+                       <li>Trình trạng: còn hàng</li>
+                        <li><strong>14,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m8.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da68.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/vo-ve-a4-colokit-skb-c03"><li>Vở vẽ A4 Colokit SKB-C03</li></a>
+                       
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>10,400</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m9.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da69.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/colokit-fiber-pen-swm-c006-washable-net-manh-net-to"><li>Hộp Bút Lông 36 Màu Fiber Pen Washable - Nét Mảnh Nét To - Colokit SWM-C006</li></a>                        <li>Online giá rẻ</li>
+                         <li>Trình trạng: còn hàng</li>
+                        <li><strong>105,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da70.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/combo-tron-bo-san-pham-thu-cong-cho-colokit-4-mon"><li>Combo Thực Hành Thủ Công Cho Bé Arty Mouse Thiên Long Colokit</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>68,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da71.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/combo-thuc-hanh-ve-theo-mau-mau-nuoc-cho-be"><li>Combo Thực Hành Vẽ Theo Mẫu Màu Nước Cho Bé Arty Mouse Thiên Long Colokit</li></a>
+                         <li>Trình trạng: còn hàng</li>
+                        <li><strong>217,600</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da72.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/combo-huong-dan-to-mau-cho-be"><li>Combo Hướng Dẫn Tô Màu Cho Bé Arty Mouse Thiên Long Colokit</li></a>
+                         <li>Trình trạng: còn hàng</li>
+                        <li><strong>139,200</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da73.webp" alt=""></li>
+                        <a href="https://product.hstatic.net/1000230347/product/combo_huong_dan_cat_dan_giay_cho_be_48dfd14bac294a5688579c362027017e.jpg"><li>Combo Hướng Dẫn Cắt Dán Giấy Cho Bé Arty Mouse Thiên Long Colokit</li></a>
+                         <li>Trình trạng: còn hàng</li>
+                        <li><strong>219,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da74.webp" alt=""></li>
+                        <a href=""><li>Bộ Sách đếm số hình thú ngộ nghĩnh và Sách vẽ theo mẫu Thiên Long Colokit Arty Mouse</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>10.490.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da75.webp" alt=""></li>
+                        <a href="https://flexoffice.com/products/bo-san-pham-colokit-arty-mouse-tracing-and-cutting-kit-c018-ar"><li>Bộ Sách đồ theo nét và Sách hướng dẫn cắt dán Thiên Long Colokit Arty Mouse</li></a>
+                        <li>Trình trạng: còn hàng</li>
+                        <li><strong>10.490.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+        </div>
+    </div>
+</selection>
+
+  <div>
+  <img  style="width:100%"src="image/da113.webp"alt=""/>
+  </div>
+  <selection class="product-galery-one">
+    <div class="container">
+        <div class="product-galery-one-content">
+            <div class="product-galery-one-content-title">
+                <br/>  <br/>
+                <h2>BALO SIÊU XINH</h2>
+                <br/>  <br/>
+            </div>
+            <div class="product-galery-one-content-product">
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m1.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da76.webp" alt=""></li>
+                        <li>Thương hiệu:OEM</li>
+                        <a href="https://tka.tiki.vn/pixel/pixel?data=djAwMSMTvfsdrXExK98ybJxOVnATlyqNYGvDVbFMZweE-_NSImRfJVnSr9R-vgDC68kFi1A2yZCyDHC8uXppiaM-XpjFFOQlTyHxkRkEldMO_DGuc5hRQviG78Oj2y4GJCij4V6WSp3f7TrxgVQskAzcOMhbmTOkcpwJCrH0uoHBFKt58EnE7IlRzUkSLfw6ZwpfS-WmC419-rPhq-yFuc7hOWwxUlA4xc0PXKQ8ai4d3XXqDaw4m6UAUdHGVsWeMuT2LzvQgd6zYyZtyxEXM9cm4WRLJPSE3c3LryDVKbA31Z8X75KIsj4biwnZJQxFKCg1ZY3okaFGFf8pQ7xDBysInZLIsu_plopTrSAvvnNZBBrWlmiCWTjP9x4hrjTAqPVrObIsRQsHHqJuHIm2MixQfMuNn0SIdAK8G6mJGrdpKMJR6DoPgLZAg7FIShpfMF_uNdfEGzagm0v1HgLPeATIw9cIO0moCD2ZSxO00KOtgg0PqBWNKyBzb-xkjwgz8wRWmJKpxC_AaTLu08SEzQvoQ2auJgRDtUeEBnWzX3Brv-IyLlVjBo0LHGKvCfQDDDZQwN3okKEfum51Wvc8OT6gUzHpi9Q_3JKkTjcmmXQr8E4lreqVE52lVgSCjdkLIEGFanNXdUwA_QPIA426TZYt-4EcXoRy1QUJ7UOBNPSHlO4v2g_CpmOvy_fTrd560FLL_bkVzCTKJkGQc9Lmx39dq1Wq-wruEacFEKHyzcdbcj2XBBHgzrEC2CmTOmHQKWWG83QQeDNluBhesNpQ6ZwDoFKzIoBdHRaYT34K-sPnbtQ7HbjfYpp0rowOQcAC7TYYqw2VwOtfcWNpCn8PWHLXtm9-wCSB5vMLBpuRNN4Mx_-MC2aPjYeeiMLLH5Q0UzU4PTQWDIOmUrElqJof5bNDiDLv00fUKBjmjkJHitxLVpgQ-1Ov6_fL_wVnEDgiBZ3Dct9jQwsLHc8EIYvjpqo8oqEhUCaiyEZoWZqUN5-rwdfwBdxOAwy0ZfTxwfs3wE0jbChL8bdtITNdOhAXneIq0Tz7Tj-pqz9IH2Tx74Umst1NBQbv5IMPJZFJXKMUOAk-kyuwozsbZBZn2l5NOUyc66GgAWEtF6WolFS_ZyaeMahLkPaOkt-FVLzk35wAr1UIZx1dtTzUQkd5-uf5IC6WrqeUb_F1Y7cy9ieScNcBIILw6uFdyr0flDbFrp0J6Pwu1JJRpO7DRLqS401kQ3eRglDUmjomRX0FKk7lLpWZmK8tSK_0JinRGpzrON2didpzegN7NJlHAXwy8-50fggJes4FtSAv1k8QD_mHiCUA8lP8VAceoPidsUKs9EfnWaBvtPcWFVKqsP3BumNrjXD3VOTH0tDr2PZhvVORpSGMU1grKWSmOInXsw&CLICK&reqid=0N42VGMLOz&pos=1&redirect=https%3A%2F%2Ftiki.vn%2Fbalo-nu-di-hoc-ca-tinh-dep-gia-re-thoi-trang-cao-cap-cute-de-thuong-3567-p191387587.html%3Fspid%3D191387591"><li>Balo nữ đi học cá tính đẹp giá rẻ thời trang cao cấp cute dễ thương 3567</li></a>
+                        <li><strong>285,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m2.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <img src="image/da77.webp" alt="">
+                        <li>Thương hiệu: Ohazo!</li>
+                        <a href="https://tiki.vn/balo-di-hoc-ohazo-phat-sang-cao-cap-balo-thoi-trang-hot-2019-tang-cap-sac-usb-khoa-chong-trom-p23912365.html?spid=23912366"><li>Balo nam nữ đi học Ohazo! Phát Sáng Cao Cấp, Balo Thời Trang Hót 2021 ( Tặng cáp sạc USB + Khóa chống Trộm)</li></a>
+                       
+                        
+                        
+                        <li><strong>169,000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m3.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da79.webp" alt=""></li>
+                        <li>Thương hiệu:OEM</li>
+                        <a href="https://tiki.vn/bo-ba-lo-thoi-trang-5-mon-hoc-sinh-gia-p16257171.html?spid=16257177"><li>Bộ ba lô thời trang 5 món học sinh giá</li></a>
+                       
+                        <li><strong>78.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m4.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da78.webp" alt=""></li>
+                        <li>Thương hiệu:OEM</li>
+                        <a href="https://tiki.vn/balo-nu-balo-hoc-sinh-sinh-vien-combo-balo-nu-4-mon-p69557166.html?spid=69557172"><li>Balo Nữ - Balo Học Sinh Sinh Viên - Combo Balo Nữ 4 Món</li></a>
+                        
+                        <li><strong>84.800</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m5.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da80.webp" alt=""></li>
+                        <li>Thương hiệu: ANANSHOP688</li>
+                        <a href="https://tka.tiki.vn/pixel/pixel?data=djAwMZE5jWzSmKM4LnD7-GCTQ8yVpeQUApz-P4ivDLYRg0ORU7mjhANWEDp5JyMaYsqZqobBFaw48Q05_Y_Na9dpDLorEYVnFaJrp8-bynPV8705tbyrIytvNHm4_d6iKsnTfTBG_bgOo6HHODQ3Wmga_nCj0kKSL-NQS6Qt2tqgKU-4HdSb3Gj4fJur9Z-30gr4dseaKZSiXiqjcDSySNG-kGdD7lYGmS0tFOgPnUb490F0bYAW_fgIckkU6UDpijO4m-Zjx5XzzkPPKN_uy61WvqOFpwYbfK8GelS4GAVurVR8Zwer728sIGJ7mm2t9YTRijKSxxffIJbQqrLC1Gp92s4hn8M1H2u1mVowyB_4K2ibaxUVhPLqe7RJ28EnpedCkoPGu9DXFcAzVQUWU90Qr3_NiRC4znvEd72Gn9HcQ4mBFvv9DTTnBo906nbjYd9k50ePb6cUCZywT0b6OZv32HmdOYCDb8CgatN_hznxbrKcIPj1LUbw_fgExM4PzVNsN0Xlzm4Ce35XOwnYP-7_a7P7KCJ0YTxNadU5b6Q8vixSpigAcu88rfGZnWX04a8GkswooPbt7D1r_oBfgSsS1uLcLurykRhzN2uWov0xKQ5-96AAE2n_U6giMN_3Oukj7geJdzl4za-e5ulLkgDTkLVAwoXb5NLDzoFoIduw9Y2Dyj65g9YNOI4zdOWFm29ZhLNwpuSOb_XONM6u-462o3NqLQtSY9NJPOKatSccVbFamw-x7JOjLs4uzPyMyQTnR0orEnRQqGQisoNP6rKp3f3bBOHzVF7YqGe5r89USCexO-6NwK00Rz1Tg7Zv8CBAixDPY2bfVLTcnxV6egxf0kf4DUxIEUF4CHT4xsWV7PvJf8XDntQbtl7pAqofXRx7CU8nV9ajTRN4M3QGw2R6PTPfA7zQt2eYwL_LmFc773vCqvEXkdS2LQ2u6XSI-cIUNvrGATEfm-QjC1NNztWlI9KL7zlA6x57BfPtPH5sHCm-Ja2ykl7qxMyQ30EI_3Ewpuh0z9BokRK4OEGnK2rBBYEGGEyNBB6NdP8cI3Zo4lUluS2AA0cm3nVWg4h2eadSubm08QqrLw_4agz0RgQ5K6Ttgai5-Kztz7EDMpgaGeAvnv2Jw1pylLSRsxn2nAQaAv7jIYbPgSpviWhFIBHcxFdhFt84gMV24EIfKPll8BkYZInxDS3v4HdLY1quwksOrR4nK_CBzmMn1uDYDpQGCqFeJvuZTVOVvJ3FIDI3McsbGML4kDIGHs1iI_wTAAJTQc0UP09IXb6vjsaFpKP6JlZcfPQR2c7yd68bzX5fpO4GiIW66WN1FAcN89QfI0S76UALOIBeu8qx7_ixaFyaAKPkoEs9pm4gpx_tf4dfF_cqxtv4uVdFKRMPRP7IDlSQ_A&CLICK&reqid=0N42VGMLOz&pos=5&redirect=https%3A%2F%2Ftiki.vn%2Fbalo-nu-sinh-di-hoc-di-choi-di-lam-khong-tham-nuoc-cao-cap-phong-cach-moi-p195676922.html%3Fspid%3D195676928"><li>Balo nữ sinh đi học đi chơi đi làm không thấm nước cao cấp phong cách mới</li></a>                   
+                        <li><strong>470.000 </strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m6.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da81.webp" alt=""></li>
+                        <li>Thương hiệu: ANANSHOP688</li>
+                        <a href="https://tka.tiki.vn/pixel/pixel?data=djAwMeEV_vvTq8GvdXu7BlJ0Tb8mWGZAApoYNo7RF_gv83vOtgTx8BCtVFqT8y-TKrBTDWejIFpfvj5ixldrYraMuHFvO1NHP5sBuBx1nE5v-Aja4L0qLZdr1rz7zAEUyQG0mUW239bAjh3UBXLVnitGnyMwPWcv2AsC3ZaeVFcClTf5G4tDOfjq-jA6b9ZfKpRJ6XvfUKVtzJ8M-7phMfAExYebM_HdR1-uaxJ896LMORnHapWCjlc0bKWXzCo0RvtRDLpDslqbm69Dn5TOF1K-jk6GxCljCg64YtfpWdbgyfcxGhXl6qfQbAU_DBkRLlLQxIFZJ8MIHdLWNg9P5ejysioO0IVdRhDFdzPRWY_zbmTH0hc2lYp9mHPQiPe5222LpnfgwfmFkO4cmXpveni1saGnxe22UnhC4nlfn0Wvw1prvtJjRAYBsD-3dkuIiJOI69Yx2xFDzfeaxbP9FYP7VoVWBZRHHI5IkuKnc9PrfDO1FgvXJ0fAcgyCnzwo3xfIr_37akC9VJRTpCPRIEfOhmi7UAYMqQrIidN90qnSiipb4oD9CmidjCakWaaZ4Ruyiza1mMK7bvwskucO_QvT6Kgu7I4ifwbfoZnaDEJ_EFqkWsuitKhwmKRmSx_vTPOIjxaKaVu0zfEx0IcNf1WTieLepdX5zHU_Zp6CcX3MZypsDg4kOzsmSXkLrHrCvvYgWAoyolFsjJCmRQyczHHxN0FnhvH_1qNfu5o1-3k3hoyXuS7q60aousTOW0eO0ZycvRRy5jHuyuglMXtBwkTbbF4ziXEga3FbGllnaXxoLQZfMvkvfQOtwTFYmgKD8AG_lx4PGD4jrmGgybZLbv6uO8wZNSWfDJQ0rOcE3SgxptwmGMY3LVJHcRToTRkRQIFhMZkIEW7Iv8Mr2jWgGYN3s1164Y0t84w1ZL9IGCkifbxKz3bqFXU95jhphAkbgChRxxCg_mJptCwnCR1pX0BkT4hG4p32A4D_FDMZeS3n0SlTDJH6uyGQeeZrQ46gki5Ax7zpH3d_FYUyTqupheWpbkWKoXcJKmVxathXwgHXf7HXiUYF2zg3HTx0hos8TXpiam3IbkDIFipKQZqG920uJ_kp2YWQ-rml_ZU4XXB465HzgFW51tD_iN_N4Qt_ocBmMpV3IOP-XXScyg6EqiROTkCgXCfWEuHU9TKfRVHu-YCnyd6cQ1j8gQ6lqpCHLxCkHa1PM2z4UojHQzTOA0Bh7fwAd7eBxewJKeAbkI1VM79ObI5vPhznqvI-E8AfU-S30Kn92R7BHfgATOvM3dSHMOIq5BDidBIeDZprhzg8ZCb107v1wuHf-KMHdoqtrjEX2Np16h69m40oXjWkrGfT8FJZ2ta42ipgp-WBqBKSDpJfVWVJLZkP6od32sdYqB5ot1AJup5ynQaHR4e2Rw&CLICK&reqid=JQX4n9xPHJ&pos=29&redirect=https%3A%2F%2Ftiki.vn%2Fbalo-laptop-cong-nghe-khoa-so-chong-trom-chong-rach-chong-nuoc-cao-cap-phong-cach-moi-p77052330.html%3Fspid%3D77052334"><li>Balo laptop công nghệ, khóa số chống trộm chống rạch chống nước cao cấp phong cách mới</li></a>
+                       
+                        <li><strong>1.050.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m7.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da82.webp" alt=""></li>
+                        <li>Thương hiệu: OEM</li>
+                        <a href="https://tiki.vn/balo-nu-combo-4-mon-di-hoc-thoi-trang-sinh-vien-hoc-sinh-ba-lo-set-cap-thoi-trang-tho-hong-p72626600.html?spid=73985740"><li>Balo nữ combo 4 món đi học thời trang sinh viên học sinh ba lô set cặp thời trang thỏ hồng</li></a>
+                        <li><strong>76.700</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m8.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da83.webp" alt=""></li>
+                        <li>Thương hiệu: OEM</li>
+                        <a href="https://tiki.vn/balo-nu-thoi-trang-di-choi-di-hoc-phong-cach-han-quoc-bk27-p135111833.html?spid=173301418"><li>Balo nữ thời trang đi chơi đi học phong cách Hàn Quốc BK27ẻ</li></a>
+                        
+                        <li><strong>162.900</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m9.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da84.webp" alt=""></li>
+                        <li>Thương hiệu: OEM</li>
+                        <a href="https://tiki.vn/balo-nu-balo-hoc-sinh-sinh-vien-combo-balo-nu-4-mon-p69557166.html?spid=69557172"><li>Balo Nữ - Balo Học Sinh Sinh Viên - Combo Balo Nữ 4 Món</li></a>
+                        
+                        <li><strong>84.800</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da85.webp" alt=""></li>
+                        <li>Thương hiệu: ANANSHOP688</li>
+                        <a href="Balo nữ không thấm nước cao cấp phong cách hàn quốc"><li>Balo nữ không thấm nước cao cấp phong cách hàn quốc</li></a>
+                        <li><strong>470.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da86.webp" alt=""></li>
+                        <li>Thương hiệu: Gubag</li>
+                        <a href="https://tiki.vn/balo-gubag-thoi-trang-cong-so-phu-hop-nam-nu-di-lam-di-hoc-chong-nuoc-chong-xuoc-ngan-rieng-dung-laptop-toi-15-6in-p116729411.html?spid=116729413"><li>Balo GUBAG thời trang công sở, phù hợp nam nữ, đi làm, đi học, chống nước, chống xước, ngăn riêng đựng laptop tới 15,6in</li></a>
+                        <li><strong>279.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da87.webp" alt=""></li>
+                        <li>Thương hiệu: OEM</li>
+                        <a href="https://tiki.vn/balo-nu-di-hoc-balo-chong-nuoc-thoi-trang-han-quoc-tre-trung-ca-tinh-ba-lo-thoi-trang-hoc-sinh-sinh-vien-p71701236.html?spid=93834675"><li>Balo Nữ Đi Học, Balo Chống Nước Thời Trang Hàn Quốc Trẻ Trung Cá Tính Ba lô thời trang học sinh, sinh viên</li></a>
+                        <li><strong>99.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da88.webp" alt=""></li>
+                        <li>Thương hiệu: OEM</li>
+                        <a href="https://tiki.vn/balo-thoi-trang-di-hoc-du-lich-mini-nu-dep-shepi-bl08-p117578436.html?spid=117578449"><li>Balo Thời Trang Đi Học Du Lịch Mini Nữ Đẹp SHEPI BL08</li></a>
+                        <li><strong>75.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da89.webp" alt=""></li>
+                        <li>Thương hiệu: Praza</li>
+                        <a href="https://tiki.vn/balo-unisex-thoi-trang-cao-cap-co-phan-quang-cong-sac-usb-praza-bltk183-p53450631.html?spid=53450635"><li>Balo Unisex Thời Trang Cao Cấp Có Phản Quang & Cổng Sạc USB Praza - BLTK183</li></a>
+                        <li><strong>179.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+                <div class="product-galery-one-content-product-item">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="slider-product-one-content-item-text">
+                        <li><img src="image/da90.webp" alt=""></li>
+                        <li>Thương hiệu: OEM</li>
+                        <a href="https://tiki.vn/balo-thoi-trang-laza-bl440-chinh-hang-p24547890.html?spid=24547899"><li>Balo Nam Nữ Thời Trang LAZA BL440-Chính hãng</li></a>
+                        <li><strong>170.000</strong><sup>đ</sup></li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </li>
+                    </div>
+                </div>
+        </div>
+    </div>
+</selection>
+             <div class="vungDuoi xam"style="height:200px;">
+                  <div class="row">
+                    <div class="col-sm-4 trai" >
+                    <h3>ĐĂN KÝ NHẬN BẢN TIN</h3>
+                    <form class="navbar-form navbar-left" action="/action_page.php">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nhập địa chỉ email">
+                  </div>
+                  <button type="submit" style="background-color:blue;"class="btn btn-default">Đăng ký</button>
+                </form>
+                </div>
+                    <div class="col-sm-4" >
+                     <h3>CHỨNG NHẬN</h3>
+                     <a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=42063"><img style="width:50%"src="image/logo1.webp"alt=""/></a>
+                    </div>
+                    <div class="col-sm-4">
+                   <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+                   <a href="https://flexoffice.com/pages/huong-dan-thanh-toan"> <img src="image/logo2.webp"alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="xoa"></div>
+             </div>
+
+
+              <div class="vung08">
+              <div class="col-sm-4 trai" >
+                    <img style="width:50%"src="image/logo3.webp"alt=""/>
+                    <p>Flexoffice.com - Website thương mại điện tử thuộc Tập đoàn Thiên Long
+                        Công ty Cổ Phần Tập Đoàn Thiên Long
+                        GPĐKKD số 0301464830 do Sở KHĐT TP. Hồ Chí Minh cấp ngày 04/03/2005.
+                       Head Office: Tầng 10, Sofic Tower, Số 10 Đường Mai Chí Thọ, Phường Thủ Thiêm, Thành Phố Thủ Đức, Thành Phố Hồ Chí Minh, Việt Nam</p>
+                       <p>2021 © Flexoffice.com - Bản quyền thuộc Tập đoàn Thiên Long</p>
+                    </div>
+                    <div class="col-sm-4 trai" >
+                     <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                     <h4 style="color:red">Hotline: 1900 866 819</h4>
+                     <h4 style="color:red">Hsalesonline@thienlongvn.com</h4>
+                     <p><a href="https://flexoffice.com/pages/huong-dan-mua-hang">- Hướng dẫn mua hàng</a></p>
+                     <p><a href="https://flexoffice.com/pages/huong-dan-thanh-toan">- Hướng dẫn thanh toán</a></p>
+                     <p><a href="https://flexoffice.com/pages/chinh-sach-giao-hang">-  Chính sách giao hàng</a></p>
+                     <p><a href="https://flexoffice.com/pages/chinh-sach-doi-tra-hoan-tien">- Chính sách đổi trả & hoàn tiền</a></p>
+                    </div>
+                    <div class="col-sm-4">
+                   <h3>VỀ FLEXOFFICE</h3>
+                   <a href="https://flexoffice.com/pages/gioi-thieu"><p>-Giới thiệu</p> </a>
+                   <a href="http://flexoffice.com.vn/vat-pham-quang-cao-0-264-46.htm"><p>- Dịch vụ in ấn quảng cáo</p> </a>
+                   <a href="https://flexoffice.com/pages/chinh-sach-bao-matu"><p>- Dịch vụ in ấn quảng cáo</p> </a>
+                   <a href="https://flexoffice.com/pages/lien-he"><p>- Thông tin liên hệ</p> </a>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              
+                         
+</body>
+</html>
